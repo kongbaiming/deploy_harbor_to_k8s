@@ -19,7 +19,7 @@ deploy_harbor_to_k8s
 ```
 #### 推送harbor镜像至镜像库
 
-切换至 harbor_image 目录下  
+切换至 harbor_image 目录下    
 将 load.sh 中 10.10.64.88 修改为你的仓库地址.
 
 ```
@@ -27,8 +27,12 @@ sh load.sh
 ```
 
 #### 推送helm server 至镜像库
-切换至 harbor-helm 目录下  
+切换至 harbor-helm 目录下    
 将 load.sh 中 10.10.64.88 修改为你的仓库地址.
+
+```
+sh load.sh
+```
 
 #### 动态卷存储(NFS)
 参照doc/使用nfs作为k8s的动态存储 进行配置
